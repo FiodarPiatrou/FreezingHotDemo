@@ -7,7 +7,7 @@ Repository for demonstration purposes
 
 Original repo is private
 
-This is the source code of project made for a Game Jam
+This is the source code of the project made for a Game Jam
 
 Build is available for use at :
 
