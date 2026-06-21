@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8752588966254929242
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 431988679352959437, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 431988679352959437, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.963436
+      objectReference: {fileID: 0}
+    - target: {fileID: 431988679352959437, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431988679352959437, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 431988679352959437, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431988679352959437, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431988679352959437, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431988679352959437, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431988679352959437, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431988679352959437, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460325600552332117, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_Name
+      value: IceCrystal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4636124677144538291, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: temperatureDelta
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177548248223686942, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 815719649406160144, guid: f9a382b368cdbf540a3289d784a536c6, type: 3}
+    - target: {fileID: 7925988440329425735, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7925988440329425735, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.42011738
+      objectReference: {fileID: 0}
+    - target: {fileID: 7925988440329425735, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7925988440329425735, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_Intensity
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7925988440329425735, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 627f08b7d1a700e4abc1fa41d1d0166c, type: 3}

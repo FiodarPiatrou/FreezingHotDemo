@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c197e3ea41748fa8f20a847bc339c60, type: 3}
+  m_Name: IceEnemyStats
+  m_EditorClassIdentifier: Assembly-CSharp::ScriptableObjects.EnemyStats
+  MaxHealth: 100
+  Speed: 3
+  AdaptationSpeed: 0
+  HotTemperatureThreshold: 1
+  ColdTemperatureThreshold: -200
+  ResistMultiplayer: 0.5
+  damage: 100
+  attackHitboxPrefab: {fileID: 3045540443182901296, guid: a9c7e4b93621598478e517e8632f9c17, type: 3}
+  attackCooldown: 1
+  windupTime: 0.3

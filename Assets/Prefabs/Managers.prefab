@@ -1,0 +1,278 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &635965966484234220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3947925113741921703}
+  - component: {fileID: 5121620307115014457}
+  - component: {fileID: 5796821912190918156}
+  - component: {fileID: 3182569014650775717}
+  - component: {fileID: -7872896758149848171}
+  - component: {fileID: -7061033134522695035}
+  - component: {fileID: 1784083966863690719}
+  - component: {fileID: 5427697059377443789}
+  - component: {fileID: 877917815513589435}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3947925113741921703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635965966484234220}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.33791, y: 1.24545, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5121620307115014457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635965966484234220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5129a691a8565e4ab4494421b8ea835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Managers.ServiceLocator
+  managersList:
+  - {fileID: 5796821912190918156}
+  - {fileID: -7872896758149848171}
+  - {fileID: -7061033134522695035}
+  - {fileID: 1784083966863690719}
+  - {fileID: 3182569014650775717}
+  - {fileID: 0}
+  - {fileID: 877917815513589435}
+--- !u!114 &5796821912190918156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635965966484234220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6027c26f6518cfc4fae33724b94f9d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Managers.WeatherManager
+  coldTemperature: -100
+  hotTemperature: 100
+  cycleDuration: 30
+  state: 0
+  currentAmbientTemp: 0
+--- !u!114 &3182569014650775717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635965966484234220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc22125d19ed8074a94b22c7de6adb13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Managers.AtmosphereManager
+  flashDuration: 1
+  flashProfile: {fileID: 11400000, guid: eb72f82388868274992af903179b7485, type: 2}
+  weatherProfilesData:
+  - state: 0
+    profile: {fileID: 11400000, guid: 821ae3dd977fa0d4cbd57bac792bd022, type: 2}
+    effectGroup: {fileID: 0}
+  - state: 1
+    profile: {fileID: 11400000, guid: d4aa672fb442e5c48941cc57ea0b5ca5, type: 2}
+    effectGroup: {fileID: 0}
+--- !u!114 &-7872896758149848171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635965966484234220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1cae124200380c4086fabcada696d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy.EnemySpawner
+  spawnInterval: 5
+  maxAttempts: 10
+  minSpawnRadius: 10
+  maxSpawnRadius: 20
+  spawnZoneMin: {x: -78.8, y: -71.9}
+  spawnZoneMax: {x: 82.5, y: 54.5}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 152
+  collisionCheckRadius: 0.7
+  commonEnemyPrefab: {fileID: 714648392762722261, guid: ee5c50ecbb1e14a4cabb804f7aeb7231, type: 3}
+  fireEnemyPrefab: {fileID: 4319312297257681031, guid: 08fef4252e1b0cc4ab859abcffae573e, type: 3}
+  iceEnemyPrefab: {fileID: 4804404117161754097, guid: f1b29e5a0ec285d45a1447ea42c11875, type: 3}
+  commonWeight: 0.3
+  showGizmos: 1
+  spawnRadiusColor: {r: 0, g: 1, b: 0, a: 0.2}
+  spawnZoneColor: {r: 1, g: 0, b: 1, a: 0.3}
+--- !u!114 &-7061033134522695035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635965966484234220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f70819942b4b2fa3ff99094cbc937d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Managers.UIInputManager
+--- !u!114 &1784083966863690719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635965966484234220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c9e3c86426d49e8b4ff3617d4dfc2be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Managers.AudioManager
+  musicSource: {fileID: 5427697059377443789}
+  sfxSource: {fileID: 5427697059377443789}
+  uiSource: {fileID: 5427697059377443789}
+  sounds:
+  - {fileID: 11400000, guid: 152bdbd02f9fcc9489e435659b2602f2, type: 2}
+  - {fileID: 11400000, guid: cec3268842ba5e443a083f0a839c22bd, type: 2}
+  - {fileID: 11400000, guid: 44d49fbc8a6784f4f9c7af7ab46224f4, type: 2}
+  - {fileID: 11400000, guid: 75bb6407cd17275438a5199483c28c75, type: 2}
+  - {fileID: 11400000, guid: a85b7d69011a5f84cb82a3bea7746fa7, type: 2}
+  - {fileID: 11400000, guid: 03d8547fbd1a12948bb83204ddcb6073, type: 2}
+--- !u!82 &5427697059377443789
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635965966484234220}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &877917815513589435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635965966484234220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9205dacadd03b7b4caa856f91b38cc92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestManager
+  playerEntity: {fileID: 0}
+  rocketEntity: {fileID: 0}
+  fireText: {fileID: 0}
+  IceText: {fileID: 0}
+  SpheresCanvas: {fileID: 0}
+  InsertCanvas: {fileID: 0}
+  SurviveCanvas: {fileID: 0}

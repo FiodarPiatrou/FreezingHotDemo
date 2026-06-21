@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Enemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Interactable
+  - Water
+  - UI
+  - Sensor
+  - Object
+  - Physical
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: TileMap
+    uniqueID: 972149119
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Weather
+    uniqueID: 3232698909
+    locked: 0
+  - name: UI
+    uniqueID: 959645385
+    locked: 0
+  - name: CameraSortingLayer
+    uniqueID: 4288411165
+    locked: 0
+  m_RenderingLayers:
+  - Default

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f254ac624df64d0e83d6aee8658ff6d0, type: 3}
+  m_Name: FootstepsData
+  m_EditorClassIdentifier: Assembly-CSharp::ScriptableObjects.SoundData
+  id: 1
+  clips:
+  - {fileID: 8300000, guid: a5b159f4862f9fe4186c9c5a43f070b2, type: 3}
+  - {fileID: 8300000, guid: 644058655f0758943a9aee64cdcdf00e, type: 3}
+  - {fileID: 8300000, guid: 82bdca2a2cedbc045a8878d80906468b, type: 3}
+  - {fileID: 8300000, guid: 64954bfee5d5eeb4c89edaf918ab0c88, type: 3}
+  - {fileID: 8300000, guid: 4f94a2754352573459e17f5ede5e90f6, type: 3}
+  volume: 0.3
+  minPitch: 0.95
+  maxPitch: 1.05
+  loop: 0
